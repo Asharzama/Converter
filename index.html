@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/6261e14a0b.js" crossorigin="anonymous"></script>
+    <title>Ashar</title>
+</head>
+<body>
+    <Header>
+        <h1>Unit Converter</h1>
+    </Header>
+    <main>
+        <section>
+            <h2>From</h2>
+            <select name="" id="from" >
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+                <option value="binary">Binary</option>
+            </select>
+            <input type="text" placeholder="Enter the value here"class="input">
+        </section>
+
+        <section>
+            <h2>To</h2>
+            <select name="" id="to">
+                <option value="decimal">Decimal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+                <option value="octal">Octal</option>
+                <option value="binary">Binary</option>
+            </select>
+            <input type="text" class="output" disabled>
+        </section>
+        
+        <div>
+            <button onclick="convert()">
+                <i class="fa-solid fa-equals"></i>
+                Convert</button>
+            <button onclick="reset()">
+                <i class="fa-solid fa-xmark"></i>
+                Reset</button>
+            <button onclick="swap()">
+                <i class="fa-solid fa-retweet"></i>
+                Swap</button>
+        </div>    
+    </main>
+</body>
+</html>
