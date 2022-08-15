@@ -50,12 +50,14 @@ section >select{
 }
 
 
-section > input{
+section > textarea{
     font-size: 2.3rem;
     width: 90%;
     margin-bottom: 1em;
     border-radius: 5px;
-    color: rgb(59, 72, 92);
+    padding: 0.3em;
+    color: rgb(18, 21, 24);
+    resize: none;
 }
 
 div > button {
