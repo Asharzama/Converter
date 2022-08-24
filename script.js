@@ -23,16 +23,16 @@ function convert(){
     // To list
     switch (to) {
         case "decimal":
-            output.value = Number(input).toString(10);    
+            output.value = parseInt(input, 10).toString();
             break;
         case "hexadecimal":
-            output.value = Number(input).toString(16);
+            output.value = parseInt(input,10).toString(16).toUpperCase();
             break;
         case "octal":
-            output.value = Number(input).toString(8);
+            output.value = parseInt(input,10).toString(8);
             break;
         case "binary":
-            output.value = Number(input).toString(2);
+            output.value = parseInt(input,10).toString(2);
             break;
     }
 }
